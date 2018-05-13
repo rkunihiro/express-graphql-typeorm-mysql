@@ -1,0 +1,29 @@
+{
+    "name": "api",
+    "version": "1.0.0",
+    "dependencies": {
+        "cors": "^2.8.4",
+        "express": "^4.16.3",
+        "express-graphql": "^0.6.12",
+        "graphql": "^0.13.2",
+        "morgan": "^1.9.0",
+        "mysql2": "^1.5.3",
+        "typeorm": "^0.2.5"
+    },
+    "devDependencies": {
+        "@types/cors": "^2.8.4",
+        "@types/express": "^4.11.1",
+        "@types/express-graphql": "^0.6.1",
+        "@types/graphql": "^0.13.1",
+        "@types/morgan": "^1.7.35",
+        "@types/node": "^10.0.8",
+        "tslint": "^5.10.0",
+        "typescript": "^2.8.3"
+    },
+    "scripts": {
+        "lint": "tslint -p ./",
+        "dev": "tsc -p ./ --sourceMap --watch",
+        "build": "tsc -p ./",
+        "start": "npm run build && node dist/app.js"
+    }
+}
